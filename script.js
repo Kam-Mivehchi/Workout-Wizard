@@ -36,7 +36,7 @@ var trisEl = $('#tris')
     })
     .then(function (data){
       console.log(data);
-
+      displayWorkOutsEl.innerHTML = "";
         for (var i = 0; i < data.results.length; i++) {
           console.log(data.results[i].name)
           displayWorkOutsEl.innerHTML = displayWorkOutsEl.innerHTML+`<button data-exercise="${data.results[i].id}" class="btn btn-exercise btn-primary">${ data.results[i].name }</button>
@@ -66,7 +66,7 @@ function getExercise(){
   })
   .then(function (data){
     console.log(data);
-
+    displayExerciseEl.innerHTML = "";
         console.log(data.name)
         displayExerciseEl.innerHTML = displayExerciseEl.innerHTML+`
         <div class="card bg-light text-dark mb-3 p-3">
