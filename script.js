@@ -18,9 +18,8 @@ var calvesEl = $('#calves2')
 var trapsEl = $('#traps')
 var trisEl = $('#tris')
 
-//Looks for Muscle Click
-$(document).ready(function() {
-  $('.btn-muscle').on('click', function(){
+///Searches for Muscle Involving Exercise
+  function getMuscle(){
     event.preventDefault();
     var muscle = $(this).attr('data-id');
     console.log(muscle);
@@ -45,73 +44,46 @@ $(document).ready(function() {
 
         //Looks for Exercise
         $(document).ready(function() {
-          $('.btn-exercise').on('click', function(){
-            event.preventDefault();
-            var exercise = $(this).attr('data-exercise');
-            console.log(muscle);
-            urlMuscle = "https://wger.de/api/v2/exerciseinfo/"+exercise+"/?language=2";
-            
-            fetch(urlMuscle, {
-              headers: {
-                  'Authorization': 'Token 954c1b128bf5599c33df6960a53dc2a5d3a7b6b4'
-              }
-            })
-            .then(function (response){
-              console.log(response);
-              return response.json();
-            })
-            .then(function (data){
-              console.log(data);
-        
-                  console.log(data.name)
-                  displayExerciseEl.innerHTML = displayExerciseEl.innerHTML+`
-                  <div class="card bg-light text-dark mb-3 p-3">
-                  <div class="card-body">
-                    <h3>${ data.name } </h3>
-                      <p><strong>Instructions</strong> ${data.description} <br>
-                  </div>
-                </div>
-              `
-            })
-          });      
+          $('.btn-exercise').on('click', getExercise)
         })
 
-    })
-  });      
-})
+    });      
+  }
 
-// function getExercises(){
-//   event.preventDefault();
-//   var exercise = $(this).attr('data-exercise');
-//   console.log(muscle);
-//   urlMuscle = "https://wger.de/api/v2/exerciseinfo/"+exercise+"/?language=2";
+function getExercise(){
+  event.preventDefault();
+  var exercise = $(this).attr('data-exercise');
+  urlMuscle = "https://wger.de/api/v2/exerciseinfo/"+exercise+"/?language=2";
   
-//   fetch(urlMuscle, {
-//     headers: {
-//         'Authorization': 'Token 954c1b128bf5599c33df6960a53dc2a5d3a7b6b4'
-//     }
-//   })
-//   .then(function (response){
-//     console.log(response);
-//     return response.json();
-//   })
-//   .then(function (data){
-//     console.log(data);
+  fetch(urlMuscle, {
+    headers: {
+        'Authorization': 'Token 954c1b128bf5599c33df6960a53dc2a5d3a7b6b4'
+    }
+  })
+  .then(function (response){
+    console.log(response);
+    return response.json();
+  })
+  .then(function (data){
+    console.log(data);
 
-//         console.log(data.name)
-//         displayExerciseEl.innerHTML = displayExerciseEl.innerHTML+`
-//         <div class="card bg-light text-dark mb-3 p-3">
-//         <div class="card-body">
-//           <h3>${ data.name } </h3>
-//             <p><strong>Instructions</strong> ${data.description} <br>
-//         </div>
-//       </div>
-//     `
-//   })
-// };      
+        console.log(data.name)
+        displayExerciseEl.innerHTML = displayExerciseEl.innerHTML+`
+        <div class="card bg-light text-dark mb-3 p-3">
+        <div class="card-body">
+          <h3>${ data.name } </h3>
+            <p><strong>Instructions</strong> ${data.description} <br>
+        </div>
+      </div>
+    `
+  })
+};      
+
+//Looks for Muscle Click
+$('.btn-muscle').on('click', getMuscle)
 
 //TEST
-urlTest = "https://wger.de/api/v2/exerciseinfo/307/?language=2";
+urlTest = "https://wger.de/api/v2/exerciseimage/307/?language=2";
 
 fetch(urlTest, {
     headers: {
