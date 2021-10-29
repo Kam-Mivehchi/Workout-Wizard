@@ -79,6 +79,16 @@ function getExercise(){
     displayExerciseEl.innerHTML = "";
         console.log(data.name)
         //Renders Exercise and Instructions
+
+        //If there is no Data Desciption/Instructions just Render Name
+        if (data.description == false) {
+          displayExerciseEl.innerHTML = displayExerciseEl.innerHTML+`
+          <div class="card bg-light text-dark mb-3 p-3">
+          <div class="card-body">
+            <h3>${ data.name } </h3>
+          </div>
+        </div>
+      `} else //If there is Render Both
         displayExerciseEl.innerHTML = displayExerciseEl.innerHTML+`
         <div class="card bg-light text-dark mb-3 p-3">
         <div class="card-body">
