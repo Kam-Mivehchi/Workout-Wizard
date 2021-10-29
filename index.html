@@ -10,21 +10,30 @@
 <body>
     <h1>TEST</h1>
 <div class="row">
-    <h2>Work-Outs by Category</h2>
-    <h3>Abs</h3>
-        <div id="Abs-Content"></div>
-    <h3>Arms</h3>
-        <div id="Arms-Content"></div>
-    <h3>Back</h3>
-        <div id="Back-Content"></div>
-    <h3>Calves</h3>
-        <div id="Calves-Content"></div>
-    <h3>Chest</h3>
-        <div id="Chest-Content"></div>
-    <h3>Legs</h3>
-        <div id="Legs-Content"></div>
-    <h3>Shoulders</h3>
-        <div id="Shoulders-Content"></div>
+    <h2>Work-Outs by Muscle</h2>
+    <form id="search-form col-12">
+        <button id="delts" class="btn btn-muscle btn-primary col-12" data-id="2">Anterior deltoid</button>
+        <button id="bicepArms" class="btn btn-primary col-12" data-id="1">Biceps brachii</button>
+        <button id="bicepLegs" class="btn btn-primary col-12" data-id="11">Biceps femoris</button>
+        <button id="elbow" class="btn btn-primary col-12" data-id="13">Brachialis</button>
+        <button id="calves" class="btn btn-primary col-12" data-id="7">Gastrocnemius</button>
+        <button id="butt" class="btn btn-primary col-12" data-id="8">Gluteus maximus</button>
+        <button id="lats" class="btn btn-primary col-12" data-id="12">Latissimus dorsi</button>
+        <button id="oblique" class="btn btn-primary col-12" data-id="14">Obliquus externus abdominis</button>
+        <button id="pecs" class="btn btn-primary col-12" data-id="4">Pectoralis major</button>
+        <button id="quads" class="btn btn-primary col-12" data-id="10">Quadriceps femoris</button>
+        <button id="pecs2" class="btn btn-primary col-12" data-id="3">Serratus anterior</button>
+        <button id="calves2" class="btn btn-primary col-12" data-id="6">Soleus</button>
+        <button id="traps" class="btn btn-primary col-12"data-id="9">Trapezius</button>
+        <button id="tris" class="btn btn-primary col-12" data-id="5">Triceps brachii</button>
+    </form>
+
+    <h3>Work-Outs:</h3>
+        <div id="display"></div>
+    
+    <h3>Exercise:</h3>
+        <div id="display2"></div>
+
 
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
