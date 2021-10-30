@@ -2,6 +2,7 @@
 var formEl = $('#search-form')
 var displayWorkOutsEl = document.querySelector('#display')
 var displayExerciseEl = document.querySelector('#display2')
+var displayVideosEl = document.querySelector('#display3')
 
 //Muscle Variables
 var deltEl = $('#delts')
@@ -44,13 +45,15 @@ var trisEl = $('#tris')
       //Render's Dynamic List of Buttons depending on data results length
         for (var i = 0; i < data.results.length; i++) {
           console.log(data.results[i].name)
-          displayWorkOutsEl.innerHTML = displayWorkOutsEl.innerHTML+`<button data-exercise="${data.results[i].id}" class="btn btn-exercise btn-primary">${ data.results[i].name }</button>
+          displayWorkOutsEl.innerHTML = displayWorkOutsEl.innerHTML+`<button data-exercise="${data.results[i].id}" data-name="${ data.results[i].name }" class="btn btn-exercise btn-primary">${ data.results[i].name }</button>
         `}
 
         //Looks for Exercise Click and runs getExercise Function
         $(document).ready(function() {
           $('.btn-exercise').on('click', getExercise)
+          $('.btn-exercise').on('click', getVideos)
         })
+        
 
     });      
   }
@@ -100,23 +103,44 @@ function getExercise(){
   })
 };      
 
+function getVideos(){
+  event.preventDefault();
+  //Grabs the search terms for youtube api based on previously embedded data name/workout
+  var search = $(this).attr('data-name');
+  //Search value placed into URL
+  YoutubeURL = `https://www.googleapis.com/youtube/v3/search?key=AIzaSyAzle8T8qTfCwHaxweXv8KqTXuvdqDjWIc&part=snippet&q=${search}+workout+instrutctions&maxResults=5&type=video`;;
+
+  //Fetches Youtube Videos Info
+  fetch(YoutubeURL, {
+    headers: {
+        'Accept': 'application/json'
+    }
+  })
+  .then(function (response){
+    console.log(response);
+    return response.json();
+  })
+  .then(function (data){
+    console.log(data);
+    //Clears Out Previous Videos if there were any
+    displayVideosEl.innerHTML = "";
+        console.log(data.items)
+        //Renders Video List
+        for (var i = 0; i < data.items.length; i++) {
+        displayVideosEl.innerHTML = displayVideosEl.innerHTML+`
+        <div class="card bg-light text-dark mb-3 p-3">
+        <div class="card-body">
+          <h3 class="p-3">${ data.items[i].snippet.title } </h3>
+            <p><strong>Description</strong> ${data.items[i].snippet.description} <br>
+        </div>
+        <a class="text-center" href="https://www.youtube.com/watch?v=${data.items[i].id.videoId}"><img src="${data.items[i].snippet.thumbnails.high.url}" class="img-fluid img-thumbnail" alt="Link to Video"/></a>
+      </div>
+    `}
+  })
+};
+
 //Looks for Muscle Click
 $('.btn-muscle').on('click', getMuscle)
 
 
 
-//DOWN BELOW IS JUST WHAT I WAS USING TO TEST DATA RESPONSES YOU CAN DISREGARD
-urlTest = "https://wger.de/api/v2/exerciseimage/307/?language=2";
-
-fetch(urlTest, {
-    headers: {
-        'Authorization': 'Token 954c1b128bf5599c33df6960a53dc2a5d3a7b6b4'
-    }
-})
-.then(function (response){
-    console.log(response);
-    return response.json();
-})
-.then(function (data){
-    console.log(data);
-})
