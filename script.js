@@ -1,3 +1,4 @@
+
 //Field Variables
 var formEl = $('#search-form')
 var displayWorkOutsEl = document.querySelector('#display')
