@@ -1,6 +1,5 @@
 # Project-1
-
-Project-1 will 
+(incude screenshot of final)
 
 ## Objective
 Build an application where the user is able to find a workout specifically to certain muscle groups. 
