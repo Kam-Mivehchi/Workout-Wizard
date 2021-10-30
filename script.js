@@ -142,5 +142,5 @@ function getVideos(){
 //Looks for Muscle Click
 $('.btn-muscle').on('click', getMuscle)
 
-
+//SVG CLICKABLE
 
