@@ -49,3 +49,14 @@
     margin-left: -102.5px;
     top: 224px;
 }
+
+.contain {
+    max-height: 600px;
+}
+
+.contain2 {
+    max-height: 554px;
+}
+.startHidden {
+    display: none;
+  }

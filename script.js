@@ -23,6 +23,7 @@ var trisEl = $('#tris')
 ///Searches for Muscle Involving Exercise
   function getMuscle(){
     event.preventDefault();
+    $('.workout:hidden').show("slow");
     var muscle = $(this).attr('data-id'); //Grabs Muscle's Data-id that is embedded into the HTML
     console.log(muscle);
     //Data-Id placed into URL
@@ -45,7 +46,7 @@ var trisEl = $('#tris')
       //Render's Dynamic List of Buttons depending on data results length
         for (var i = 0; i < data.results.length; i++) {
           console.log(data.results[i].name)
-          displayWorkOutsEl.innerHTML = displayWorkOutsEl.innerHTML+`<button data-exercise="${data.results[i].id}" data-name="${ data.results[i].name }" class="btn btn-exercise btn-primary">${ data.results[i].name }</button>
+          displayWorkOutsEl.innerHTML = displayWorkOutsEl.innerHTML+`<button data-exercise="${data.results[i].id}" data-name="${ data.results[i].name }" class="btn btn-exercise btn-primary col-12">${ data.results[i].name }</button>
         `}
 
         //Looks for Exercise Click and runs getExercise Function
@@ -61,6 +62,7 @@ var trisEl = $('#tris')
 //Looks Up Exercise that was click on
 function getExercise(){
   event.preventDefault();
+  $('.results:hidden').show("slow");
   //Grabs the exercise id that was dynamically embedded into the HTML in the last function
   var exercise = $(this).attr('data-exercise');
   //Exercise value placed into URL
@@ -141,6 +143,3 @@ function getVideos(){
 
 //Looks for Muscle Click
 $('.btn-muscle').on('click', getMuscle)
-
-//SVG CLICKABLE
-
