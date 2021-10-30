@@ -14,16 +14,20 @@
       line-height: 1.5;
       color: var(--indigo-dye);
       background-color: var(--oxford-blue);
-      margin: 0;
-      display: flex;
-      flex-direction: column;
+      margin: 0px auto;
+      /* display: flex; */
+      /* flex-direction: row;
       min-height: 100vh;
-      justify-content: flex-start;
-      display: flex;
+      /* justify-content: flex-start; */
+      /* display: block;
       flex-wrap: wrap;
-      flex-grow: 1;
+      flex-grow: 1; */
   } 
   
+  header{
+    text-align:center;
+  }
+
   h1
   h2,
   h3 {
@@ -32,10 +36,12 @@
     line-height: 1.1;
   }
   
-  h1 {
+  h1{
     font-size: 4rem;  
     color: var(--cadet-grey);
     background-color: var(--oxford-blue);
+    text-align:center;
+    display:block;
   }
   
   h2 {
@@ -56,16 +62,29 @@
     color: var(--mint-cream);
   }
   
-  .card {
+  .card { 
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    margin:auto;
+  }
+
+  .bodyGraphic{
+    justify-content:center;
+    align-items:center;
+  }
+   .card {
       border-style: solid;
       border-width: 1px;
       border-radius: 50px;
       padding: 10px;
       flex: 0 0 300px;
-      margin: 20px;
-      background-color: var(--oxford-blue);
+      /* margin: 20px; */
+      background-color: white;
       color: var(--cadet-grey);
-    }
+    } 
   
   .card header {
       border-radius: 50px;
@@ -75,7 +94,7 @@
    .card img {
        width: 20%;
        margin: 10%;
-   } 
+   }  */
   .row {
       display: flex;
       flex-direction: row;

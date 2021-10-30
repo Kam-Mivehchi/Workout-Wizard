@@ -1,0 +1,19 @@
+
+body{
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    font-family: i;
+    color:#990000;
+    background-color: #f8f5f0;
+
+
+
+}
+
+h1{
+    color:#990000;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px #000000
+
+}
