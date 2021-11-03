@@ -144,8 +144,5 @@ function getVideos(){
   })
 };
 
-//Makes Navbar able to collapse
-$('.collapse').collapse('toggle')
-
 //Looks for Muscle Click
 $('.btn-muscle').on('click', getMuscle)
