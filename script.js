@@ -46,7 +46,10 @@ var trisEl = $('#tris')
       //Render's Dynamic List of Buttons depending on data results length
         for (var i = 0; i < data.results.length; i++) {
           console.log(data.results[i].name)
-          displayWorkOutsEl.innerHTML = displayWorkOutsEl.innerHTML+`<button data-exercise="${data.results[i].id}" data-name="${ data.results[i].name }" class="btn  btn-exercise btn-primary col-12">${ data.results[i].name }</button>
+
+
+          displayWorkOutsEl.innerHTML = displayWorkOutsEl.innerHTML+`<button onclick="window.location.href='#results'" data-exercise="${data.results[i].id}" data-name="${ data.results[i].name }" class="btn btn-exercise btn-primary col-12">${ data.results[i].name }</button>
+
         `}
 
         //Looks for Exercise Click and runs getExercise Function
