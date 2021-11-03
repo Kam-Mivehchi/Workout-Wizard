@@ -60,3 +60,7 @@
 .startHidden {
     display: none;
   }
+
+.btn{
+    margin-bottom: 2px;
+}

@@ -46,7 +46,7 @@ var trisEl = $('#tris')
       //Render's Dynamic List of Buttons depending on data results length
         for (var i = 0; i < data.results.length; i++) {
           console.log(data.results[i].name)
-          displayWorkOutsEl.innerHTML = displayWorkOutsEl.innerHTML+`<button data-exercise="${data.results[i].id}" data-name="${ data.results[i].name }" class="btn btn-exercise btn-primary col-12">${ data.results[i].name }</button>
+          displayWorkOutsEl.innerHTML = displayWorkOutsEl.innerHTML+`<button data-exercise="${data.results[i].id}" data-name="${ data.results[i].name }" class="btn  btn-exercise btn-primary col-12">${ data.results[i].name }</button>
         `}
 
         //Looks for Exercise Click and runs getExercise Function
@@ -88,14 +88,14 @@ function getExercise(){
         //If there is no Data Desciption/Instructions just Render Name
         if (data.description == false) {
           displayExerciseEl.innerHTML = displayExerciseEl.innerHTML+`
-          <div class="card bg-light text-dark mb-3 p-3">
-          <div class="card-body">
+          <div class="card bg-light text-dark mb-3 p-3 ">
+          <div class="card-body ">
             <h3>${ data.name } </h3>
           </div>
         </div>
       `} else //If there is Render Both
         displayExerciseEl.innerHTML = displayExerciseEl.innerHTML+`
-        <div class="card bg-light text-dark mb-3 p-3">
+        <div class="card bg-light text-dark mb-3 p-3 ">
         <div class="card-body">
           <h3>${ data.name } </h3>
             <p><strong>Instructions</strong> ${data.description} <br>
