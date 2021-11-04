@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth !important;
+}
+
 body
 {
     cursor: url('cursor.cur'), auto;	
@@ -33,6 +37,7 @@ p{
     width: 207px;
     position: relative;
     padding-top: 240px;
+    top: 50px;
     height: 260px;
     display: block;
     margin: 40px auto;
@@ -83,12 +88,13 @@ p{
 }
 
 .contain {
-    max-height: 600px;
+    max-height: 630px;
 }
 
 .contain2 {
-    max-height: 554px;
+    max-height: 584px;
 }
+
 .startHidden {
     display: none;
 }
