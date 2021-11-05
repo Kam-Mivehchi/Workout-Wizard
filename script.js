@@ -101,7 +101,7 @@ function getExercise(){
         <div class="card bg-light text-dark mb-3 p-3 ">
         <div class="card-body">
           <h3>${ data.name } </h3>
-            <p><strong>Instructions</strong> ${data.description} <br>
+            <p><strong>Instructions:</strong> ${data.description} <br>
         </div>
       </div>
     `
