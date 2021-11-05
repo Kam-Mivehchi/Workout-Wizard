@@ -45,11 +45,52 @@ body {
   .title {
     color: white;
   }
-  
+  #navbar {
+    font-size: 22px;
+}
+
+.work {
+    color: white;
+}
+
+.out {
+    color: #88c0d0
+}
+
+.wizard {
+    font-family: 'Pacifico', cursive;
+    color: #57c9d5;
+    font-size: 18px;
+}
+
+.wizard:hover {
+    color: #ff7d16;
+}
+
+.navbar-nav > li{
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+ul li {
+    position: relative;
+    top: -5px;
+}
+
+nav{
+  font-family: 'Kanit', sans-serif;
+
+  font-size: 22px 
+
+}
 
   @media screen and (max-width: 650px) {
     .column {
       width: 100%;
       display: block;
     }
+    .navbar-nav > li{
+      margin-left: 0px;
+      margin-right: 0px;
+  }
   }
