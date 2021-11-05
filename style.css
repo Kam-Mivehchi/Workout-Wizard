@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth !important;
+}
+
 body
 {
     cursor: url('cursor.cur'), auto;	
@@ -18,7 +22,9 @@ h3{
 }
 nav{
     font-family: 'Kanit', sans-serif;
-    font-size: 30px 
+
+    font-size: 22px 
+
 }
 
 p{
@@ -33,6 +39,7 @@ p{
     width: 207px;
     position: relative;
     padding-top: 240px;
+    top: 50px;
     height: 260px;
     display: block;
     margin: 40px auto;
@@ -49,12 +56,9 @@ p{
     fill: #57c9d5;
 }
 .human-body svg.hat {
-    left: 59px;
-    top: -71px;
-}
-.human-body svg.head {
-    margin-left: -28.5px;
-    top: -6px;
+    left: 63px;
+    top: -123px;
+    z-index: 99;
 }
 .human-body svg.head:hover path {
     fill: #57c9d5;
@@ -86,12 +90,13 @@ p{
 }
 
 .contain {
-    max-height: 600px;
+    max-height: 630px;
 }
 
 .contain2 {
-    max-height: 554px;
+    max-height: 584px;
 }
+
 .startHidden {
     display: none;
 }
@@ -104,17 +109,44 @@ p{
     min-height: 580px;
 }
 
-#navbar{
-    font-size: 60px;
+#navbar {
+    font-size: 22px;
 }
-#contact{
-    color:rgb(0, 0, 0);
-    margin-top:-70px;
-    margin-right:20px;
+
+.work {
+    color: white;
+}
+
+.out {
+    color: #88c0d0
+}
+
+.wizard {
+    font-family: 'Pacifico', cursive;
+    color: #57c9d5;
+    font-size: 18px;
+}
+
+.wizard:hover {
+    color: #ff7d16;
+}
+
+.navbar-nav > li{
+    margin-left: 15px;
+    margin-right: 5px;
 }
 @media only screen and (max-width: 991px) {
+
+    .navbar-nav > li{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
     .body-container {
         order: 1;
+    }
+    .navbar button {
+        position: relative;
+        right: 0px;
     }
     .muscle-container {
         order: 2;

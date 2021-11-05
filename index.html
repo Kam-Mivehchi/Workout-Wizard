@@ -9,28 +9,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="cursor" href="cursor.cur">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,500&family=Poppins:wght@200&display=swap" rel="stylesheet">
-
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">  
+
 </head>
 <body>
-    <nav class= "navbar-light bg-primary p-3"  >
-        <h1 class="navbar-brand"id ="navbar">Workout Wizard</h1>
-        <div class="d-flex justify-content-end ">
-            <a class="navbar-item " id="contact" href="#">Meet the Creators</a>
-        </div>
-        
 
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" id="navbar" href="#"><span class="work">WORK</span><span class="out">OUT</span><span class="wizard"> WIZARD</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ml-auto mt-2">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link ml-3" href="#">Meet the Creators</a>
+            </li>
+          </ul>
+        </div>
     </nav>
-    <h1 class="text-center p-5">What would you like to work out today?</h1>
+
+    <h1 class="text-center p-5 mt-2">What would you like to work out today?</h1>
 
 
 <div class='container'>
     <div class="row container-fluid col-12">
 
     <div class="col-lg-3 col-md-12 contain muscle-container">
-        <!-- Place Holders -->
+   
         <h2 class="text-center">Muscles</h2>
             <form id="search-form col-12">
 
@@ -54,22 +65,45 @@
     
     <div class="col-lg-6 col-md-12 d-block position-relative body-container">
         <div class="human-body">
-            <svg data-position="head" class="head" xmlns="http://www.w3.org/2000/svg" width="56.594" height="95.031" viewBox="0 0 56.594 95.031"><path d="M15.92 68.5l8.8 12.546 3.97 13.984-9.254-7.38-4.622-15.848zm27.1 0l-8.8 12.546-3.976 13.988 9.254-7.38 4.622-15.848zm6.11-27.775l.108-11.775-21.16-14.742L8.123 26.133 8.09 40.19l-3.24.215 1.462 9.732 5.208 1.81 2.36 11.63 9.72 11.018 10.856-.324 9.56-10.37 1.918-11.952 5.207-1.81 1.342-9.517zm-43.085-1.84l-.257-13.82L28.226 11.9l23.618 15.755-.216 10.37 4.976-17.085L42.556 2.376 25.49 0 10.803 3.673.002 24.415z"/></svg>
-            <svg  xmlns="http://www.w3.org/2000/svg" class="hat" width="90" height="110" viewBox="0 0 15.163 15.163">
-                        <path style="fill:#1597E5;" d="M11.649,10.797c-0.025-0.014-0.053-0.022-0.079-0.032L7.947,1.183l0.017-0.02
-                            C8.003,1.139,8.045,1.121,8.09,1.116c0.265-0.025,0.626,0.11,0.804,0.481c0.392,1.185,1.217,1.252,1.217,1.252
-                            S9.309,2.554,9.099,1.718C8.984,1.25,8.65,1.02,8.65,1.02C8.501,0.901,8.314,0.822,8.072,0.823c-0.033,0-0.063,0.01-0.096,0.016
-                            c0.02-0.025,0.039-0.047,0.066-0.062c0.181-0.093,0.477-0.1,0.71,0.114C8.973,1.152,9.19,1.293,9.382,1.37
-                            c0.422,0.655,0.974,0.701,0.974,0.701s-0.479-0.18-0.802-0.646c0.251,0.058,0.422,0.009,0.422,0.009S9.76,1.437,9.505,1.342
-                            C9.43,1.217,9.362,1.079,9.32,0.915C9.204,0.437,8.863,0.202,8.863,0.202C8.709,0.08,8.518-0.001,8.271,0
-                            C8.017,0.001,7.807,0.174,7.687,0.344c-0.014,0.02-0.089,0.124-0.104,0.144C7.524,0.564,7.166,1.303,7.166,1.303
-                            s-0.063,0.158-0.12,0.3c-0.01,0.018-0.018,0.036-0.022,0.056c-0.576,1.438-2.547,6.371-3.61,9.187
-                            c-0.887,0.382-2.531,1.252-2.331,2.391c0.153,0.871,1.085,1.708,6.832,1.923c0.118,0.002,0.241,0.003,0.368,0.003
-                            c2.154,0,5.412-0.241,5.777-1.669C14.343,12.389,12.921,11.473,11.649,10.797z M8.161,0.348C8.201,0.323,8.244,0.305,8.289,0.3
-                            C8.56,0.274,8.93,0.412,9.111,0.792C9.17,0.97,9.239,1.12,9.312,1.252c-0.134-0.076-0.267-0.18-0.379-0.334
-                            c-0.214-0.3-0.519-0.37-0.519-0.37C8.284,0.51,8.14,0.506,7.982,0.563L8.161,0.348z M7.811,13.959
-                            c-4.87,0.079-5.483-1.016-5.611-1.152c0.054-0.119,0.33-0.292,0.598-0.477c-0.041,0.129-0.069,0.225-0.076,0.271
-                            c-0.102,0.71,8.629,1.457,9.625,0l-0.097-0.256c0.569,0.411,0.638,0.618,0.648,0.618C12.651,13.397,10.867,13.908,7.811,13.959z"/></svg>
+
+            <svg version="1.0" class="hat" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 889.000000 1280.000000"
+            preserveAspectRatio="xMidYMid meet">
+           <metadata>
+           Created by potrace 1.15, written by Peter Selinger 2001-2017
+           </metadata>
+           <g transform="translate(0.000000,1280.000000) scale(0.0660000,-0.066000)"
+           fill="#57c9d5" stroke="none">
+           <path d="M5540 12794 c-346 -43 -644 -202 -890 -475 -348 -386 -660 -876
+           -1044 -1639 -440 -874 -926 -2053 -1371 -3330 -32 -91 -65 -174 -75 -185 -9
+           -11 -49 -128 -88 -260 -39 -132 -75 -252 -80 -266 l-10 -26 -219 -6 c-650 -20
+           -1088 -131 -1405 -357 -102 -73 -222 -194 -279 -282 -69 -108 -95 -235 -65
+           -319 9 -26 10 -55 3 -110 -12 -97 10 -224 52 -316 25 -51 54 -88 129 -163 105
+           -104 164 -147 306 -221 199 -103 597 -226 926 -284 130 -23 126 -21 89 -52
+           -94 -79 -118 -173 -58 -232 l30 -31 -22 -32 c-12 -18 -100 -112 -194 -208
+           -263 -268 -363 -403 -445 -603 -77 -189 -112 -360 -130 -630 -13 -184 -6 -422
+           11 -444 28 -33 70 -12 171 85 40 39 59 51 62 41 2 -8 18 -99 35 -204 40 -243
+           113 -570 153 -683 61 -175 166 -355 300 -517 82 -101 102 -114 129 -89 23 21
+           36 66 45 155 l7 67 36 -21 c20 -12 137 -120 261 -242 291 -285 419 -386 680
+           -537 150 -87 494 -258 518 -258 30 0 39 23 47 120 10 132 28 170 80 170 9 0
+           44 -25 78 -55 152 -136 355 -256 524 -309 158 -49 266 -57 424 -30 266 46 524
+           189 888 495 165 138 169 142 184 136 7 -2 20 -52 31 -113 24 -137 49 -207 83
+           -229 25 -17 25 -17 90 46 90 89 471 588 517 676 38 74 68 65 122 -37 43 -82
+           76 -120 103 -120 28 0 70 60 169 239 125 226 237 491 328 776 15 46 39 43 76
+           -11 18 -27 47 -64 65 -84 27 -29 35 -33 50 -24 44 27 73 256 73 570 0 514 -65
+           903 -201 1203 -38 83 -127 215 -178 266 -58 56 -55 68 17 63 69 -5 167 -47
+           230 -100 91 -74 140 -81 121 -16 -39 139 -293 452 -502 622 l-89 71 37 3 c21
+           2 115 -4 210 -12 215 -20 314 -20 528 -1 338 30 572 76 785 154 350 129 591
+           363 761 735 25 55 58 117 73 137 127 166 38 309 -226 364 -91 18 -112 15 -210
+           -31 -112 -53 -231 -74 -453 -81 -246 -7 -425 6 -823 63 -269 39 -705 115 -713
+           125 -2 2 -20 157 -40 344 -20 187 -73 673 -117 1080 -44 407 -117 1071 -161
+           1475 -43 404 -115 1064 -159 1465 -44 402 -92 841 -106 977 -15 137 -24 251
+           -20 255 13 14 287 15 386 3 187 -24 280 -66 474 -214 225 -173 349 -241 556
+           -310 128 -42 290 -86 290 -79 0 3 -42 81 -94 172 -51 91 -135 245 -186 341
+           -275 518 -422 738 -649 973 -119 123 -277 254 -351 292 -67 34 -215 83 -304
+           101 -72 14 -321 26 -386 18z"/>
+           </g>
+           </svg>
             <svg data-position="shoulder" data-id="2" class="shoulder btn-muscle" xmlns="http://www.w3.org/2000/svg" width="109.532" height="46.594" viewBox="0 0 109.532 46.594" onclick="window.location.href='#workouts'"><path d="M38.244-.004l1.98 9.232-11.653 2.857-7.474-2.637zm33.032 0l-1.98 9.232 11.653 2.857 7.474-2.637zm21.238 10.54l4.044-2.187 12.656 14 .07 5.33S92.76 10.66 92.515 10.535zm-1.285.58c-.008.28 17.762 18.922 17.762 18.922l.537 16.557-6.157-10.55L91.5 30.988 83.148 15.6zm-74.224-.58L12.962 8.35l-12.656 14-.062 5.325s16.52-17.015 16.764-17.14zm1.285.58C18.3 11.396.528 30.038.528 30.038L-.01 46.595l6.157-10.55 11.87-5.056L26.374 15.6z"/></svg>
             <svg data-position="arm" data-id="1" class="arm btn-muscle" xmlns="http://www.w3.org/2000/svg" width="156.344" height="119.25" viewBox="0 0 156.344 119.25" onclick="window.location.href='#workouts'"><path d="M21.12 56.5a1.678 1.678 0 0 1-.427.33l.935 8.224 12.977-13.89 1.2-8.958A168.2 168.2 0 0 0 21.12 56.5zm1.387 12.522l-18.07 48.91 5.757 1.333 19.125-39.44 3.518-22.047zm-5.278-18.96l2.638 18.74-17.2 46.023L.01 113.05l6.644-35.518zm118.015 6.44a1.678 1.678 0 0 0 .426.33l-.934 8.222-12.977-13.89-1.2-8.958A168.2 168.2 0 0 1 135.24 56.5zm-1.39 12.52l18.073 48.91-5.758 1.333-19.132-39.44-3.52-22.05zm5.28-18.96l-2.64 18.74 17.2 46.023 2.658-1.775-6.643-35.518zm-103.1-12.323a1.78 1.78 0 0 1 .407-.24l3.666-27.345L33.07.015l-7.258 10.58-6.16 37.04.566 4.973a151.447 151.447 0 0 1 15.808-14.87zm84.3 0a1.824 1.824 0 0 0-.407-.24l-3.666-27.345L123.3.015l7.258 10.58 6.16 37.04-.566 4.973a151.447 151.447 0 0 0-15.822-14.87zM22.288 8.832l-3.3 35.276-2.2-26.238zm111.79 0l3.3 35.276 2.2-26.238z"/></svg>
             <svg data-position="chest" data-id="4" class="chest btn-muscle" xmlns="http://www.w3.org/2000/svg" width="86.594" height="45.063" viewBox="0 0 86.594 45.063" onclick="window.location.href='#workouts'"><path d="M19.32 0l-9.225 16.488-10.1 5.056 6.15 4.836 4.832 14.07 11.2 4.616 17.85-8.828-4.452-34.7zm47.934 0l9.225 16.488 10.1 5.056-6.15 4.836-4.833 14.07-11.2 4.616-17.844-8.828 4.45-34.7z"/></svg>
@@ -95,8 +129,11 @@
 
 </div>
 
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 <script src="script.js"></script>
+
 </body>
 </html>
