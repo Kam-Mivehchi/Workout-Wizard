@@ -84,7 +84,7 @@ nav{
 
 }
 
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 951px) {
     .column {
       width: 100%;
       display: block;
