@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Kanit', sans-serif;
     margin: 0;
   }
   
@@ -28,6 +28,8 @@ body {
     text-align: center;
     background-color: #1597E5;
     color: white;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
   }
   
   .container {
