@@ -26,12 +26,12 @@ body {
   .about-section {
     padding: 50px;
     text-align: center;
-    background-color: #474e5d;
+    background-color: #1597E5;
     color: white;
   }
   
   .container {
-    padding: 0 16px;
+    padding: 10px 16px;
   }
   
   .container::after, .row::after {
@@ -41,7 +41,7 @@ body {
   }
   
   .title {
-    color: grey;
+    color: white;
   }
   
 
