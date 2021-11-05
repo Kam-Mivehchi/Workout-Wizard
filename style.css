@@ -54,8 +54,8 @@ p{
     fill: #57c9d5;
 }
 .human-body svg.hat {
-    left: 58.5px;
-    top: -120px;
+    left: 63px;
+    top: -123px;
     z-index: 99;
 }
 .human-body svg.head:hover path {
