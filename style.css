@@ -135,6 +135,12 @@ p{
     margin-left: 15px;
     margin-right: 5px;
 }
+
+ul li {
+    position: relative;
+    top: -5px;
+}
+
 @media only screen and (max-width: 991px) {
 
     .navbar-nav > li{
