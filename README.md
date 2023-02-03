@@ -40,7 +40,7 @@ Technology:
 * [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScrip)
 
 
-###Authors
+### Authors
 Contributors names and contact info:
 
 * [Runa](https://github.com/runaariga)
